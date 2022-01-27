@@ -1,0 +1,80 @@
+2592번 >> 평균과 최빈값 찾기
+code)
+list=[]
+count={}
+for i in range(10):
+    list.append(int(input()))
+    
+for i in list:
+    try: count[i] +=1
+    except: count[i]=1
+a=(sum(list)/10)
+print(int(a))
+print(max(count, key=count.get))
+
+code) 해설 
+리스트, 딕셔너리 하나씩 생성
+반복문으로 입력값을 10개 받는다
+list 항목을 반복문 돌려서 갯수를 세서 이를 딕셔너리에 갯수를 넣는다
+(try-except 사용)
+그후에 평균값을 a에 받아서 출력
+최빈값은 딕셔너리에서 values가 가장 큰 값의 key 를 출력 
+
+1453번 >> 한참 고민했는데 가장 깔끔하게 답을 찾은 코드
+code)
+n=int(input())
+pc_guest = list(map(int,input().split()))
+seat = len(list(set(pc_guest)))
+print(n-(seat))
+
+code) 해설
+n= 몇명이 들어오는지 입력 받음
+pc_guest는 그 입력을 리스트로 받음
+seat = 리스트에서 set함수를 통해 중복을 제거하면 몇개의 값이 나오는지 출력
+결국 어차피 한자리에 한명이 앉으면 나머지는 거절되니깐
+n-seat 을 빼면 거절된 인원들이 나온다
+>> 풀이 방법이 굉장히 심플하고 머리를 잘 쓴 것 같음
+
+2789번 >> BASE로 문자열 하나를 주고 입력받은 문자열과 비교해서 같은 문자열이 있으면 제거하고 출력하는 문제
+나는 반복문으로 풀었는데 replace 라는 함수가 있었음 / 이해는 아직 안감
+
+내 code)
+gov='CAMBRIDGE'
+mail=list(input())
+for i in gov:
+    for j in range(len(mail)):
+        if i==mail[j]:
+            mail[j]=''
+for i in mail:
+    print(i,end='')
+code) 해설
+gov = 기본적으로 주어진 문자열
+mail = 내가 입력을 해주는 문자열
+반복문 돌리면서 gov 하고 mail의 문자열이 같으면 제거
+그후에 mail을 출력해주는데 end=''를 통해서 바로 옆으로 붙여서 출력함 
+
+replace를 사용한 코드) >>> 이해안감 코드해석 해놓은 곳도 없음 
+일단 이런게 있다는 정도만 기억해두면 될 듯
+mail = input()
+
+for i in "CAMBRIDGE":
+    mail = mail.replace(i,"")
+print(mail) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
