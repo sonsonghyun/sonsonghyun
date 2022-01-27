@@ -1,0 +1,127 @@
+.home__img1 {
+  background-image: url("../images/home/home1.png");
+  height: 180px;
+  background-size: 100% 100%;
+}
+
+.home__img2 {
+  background-image: url("../images/home/home2.png");
+  height: 180px;
+  background-size: 100% 100%;
+}
+
+.home__img3 {
+  background-image: url("../images/home/home3.png");
+  height: 180px;
+  background-size: 100% 100%;
+}
+
+.home__img4 {
+  background-image: url("../images/home/home4.png");
+  height: 180px;
+  background-size: 100% 100%;
+}
+
+.home__img5 {
+  background-image: url("../images/home/home5.png");
+  height: 180px;
+  background-size: 100% 100%;
+}
+
+.home__img6 {
+  background-image: url("../images/home/home6.png");
+  height: 180px;
+  background-size: 100% 100%;
+}
+
+.home__img7 {
+  background-image: url("../images/home/home7.png");
+  height: 180px;
+  background-size: 100% 100%;
+}
+
+.home__img8 {
+  background-image: url("../images/home/home8.png");
+  height: 180px;
+  background-size: 100% 100%;
+}
+
+.home__box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.info1 {
+  margin: 5px 0px;
+  font-size: 15px;
+  color: gray;
+}
+
+.info2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(60, 60, 60);
+}
+
+.info2 a {
+  text-decoration: none;
+  color: black;
+}
+
+.star {
+  font-size: 15px;
+  color: rgb(30, 120, 110);
+  font-weight: 800;
+}
+
+.count,
+.type {
+  font-size: 15px;
+}
+
+.sec__title {
+  font-size: 25px;
+  font-weight: 800;
+  color: rgb(66, 66, 66);
+  margin-bottom: 10px;
+}
+
+.search__point {
+  height: 40px;
+  box-shadow: 0 0 3px;
+  border: 1px solid #888;
+  cursor: pointer;
+  font-size: 20px;
+  width: 800px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.search__box {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+body {
+  background-color: darkgray;
+}
+
+.search {
+  height: 200px;
+  padding-top: 20px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  padding-left: 520px;
+}
+
+h1 {
+  margin-left: 20px;
+  font-size: 40px;
+}
+
+h1 a {
+  text-decoration: none;
+  color: black;
+}

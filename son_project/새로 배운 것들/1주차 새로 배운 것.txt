@@ -1,0 +1,82 @@
+html 처음 구성할 때 
+div 나열하는 것 보다 생각보다 section을 많이 사용함 부분을 나눠서 그런 것 같음
+div 보다 깔끔하게 배열 됨
+
+내가 항상 궁금했던 flex 외에 구간을 나누는 방법에
+dispaly: grid; 라는 것을 사용함
+안먹는 브라우저도 많음
+
+nav {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+auto 대신에 1fr 1fr; 을 사용하기도 함 (1대1 비율)
+
+grid-gap: 30px; 
+각각 요소의 갭 설정 해줌 (개꿀임 일일이 flex 비율 맞출 필요도 없고)
+
+justify-content: space-between; 
+구성요소가 양옆으로 붙음
+
+font-weight: 800; 
+글자 굵기 조절 유용하게 쓸 듯
+
+list-style-type: none;
+리스트 앞에 점 있는 거 없애줌 (그냥 효과 싹 다 없애는 것)
+
+text-decoration: none;
+a테그의 효과 그냥 싹 다 제거
+
+margin 사용시 
+margin: 0 0 0 0
+처음꺼 부터 시계로 12시 3시 6시 9시로 해서 값 넣으면 됨
+
+<table>
+	<tr>
+		<td colspan="2" class="search__subtitle">목적지</td>
+	</tr>
+</table>
+
+table 안에 표 tr, td 사용 colpsan=2 는 안에 가로행 안에 2개를 묶었다는 뜻
+
+position: relative;
+이전 요소(주로 부모 요소)에 자연스럽게 연결하여 위치를 지정.
+static을 제외한 나머지 속성값들은 top, left, bottom, right 와 같이 어느 위치에 요소를 위치시킬 건지 지정할 수 있습니다. 
+각 값들은 그 방향에서 얼마만큼 떨어져 위치시킬 것인 지를 나타냅니다. 
+예로들어 top: 15px 면 기준위치 위에서 15px 떨어져 있는 곳에 위치시키라는 뜻입니다.
+
+border: 1px solid rgb(숫자, 숫자, 숫자)
+>> border 에도 색 지정 가능
+
+cursor: pointer;
+커서 형식으로 바꿔준다
+
+같은 코드를 지울 때는 ALT 를 누르고 지정 코드를 누르면 한번에 지울 수 있음
+
+background-image: url("../images/card1.jpg");
+css로 이미지 넣는 방법 >> 항상 이상한 방법으로 하던거 였음 이걸로 통일
+
+background-size: 100% 100%;
+배경사진 크기에 알맞게 넣는 방법
+
+align-items: center;
+***글자 세로방향으로 정렬
+
+border-radius
+>> 이거 background-image에도 줄 수 있다
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

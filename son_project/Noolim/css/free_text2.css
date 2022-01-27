@@ -1,0 +1,46 @@
+h1 a {
+  font-size: 35px;
+  font-weight: 800;
+  margin-left: 30px;
+  text-decoration: none;
+  color: black;
+}
+
+.main {
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 100px;
+  padding-top: 80px;
+  margin-bottom: 30px;
+}
+
+.text {
+  margin-left: 100px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.write {
+  border: 1px solid;
+  width: 1500px;
+  height: 500px;
+  margin-left: 100px;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.finish {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.btn1 {
+  font-size: 20px;
+  margin-left: 800px;
+}
+
+.btn2 {
+  font-size: 20px;
+}

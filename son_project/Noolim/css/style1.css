@@ -1,0 +1,238 @@
+@font-face {
+  font-family: abster;
+  src: url(font/abster-webfont.woff) format("woff");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  margin: 30px 0;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(../images/room.jpg);
+}
+
+.container .header {
+  width: 80%;
+  height: 80px;
+  margin: 0 AUTO;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* .container .header h1 a {
+  text-decoration: none;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+} */
+
+h1 {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container .nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.container .nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.container .nav ul li a:hover {
+  color: #1fdfdf;
+}
+
+.container .hero {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container .hero h2 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.container .hero p {
+  font-size: 22px;
+}
+
+.container .hero button {
+  background: none;
+  border: 2px solid darkseagreen;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 20px;
+  margin-top: 30px;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.4s;
+  font-size: 30px;
+}
+
+.container .hero button:hover {
+  background-color: darkslategray;
+}
+
+.sec__title {
+  font-size: 25px;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.choo__box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+}
+
+.choo__img1 {
+  position: relative;
+  color: white;
+}
+
+.choo__img2 {
+  position: relative;
+  color: white;
+}
+
+.choo__img3 {
+  position: relative;
+  color: white;
+}
+
+.choo__img4 {
+  position: relative;
+  color: white;
+}
+
+.choo__img5 {
+  position: relative;
+  color: white;
+}
+
+.choo__img1 .text {
+  position: absolute;
+  color: white;
+  top: 190px;
+  left: 66px;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.choo__img2 .text {
+  position: absolute;
+  color: white;
+  top: 190px;
+  left: 69px;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.choo__img3 .text {
+  position: absolute;
+  color: white;
+  top: 190px;
+  left: 89px;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.choo__img4 .text {
+  position: absolute;
+  color: white;
+  top: 190px;
+  left: 99px;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.choo__img5 .text {
+  position: absolute;
+  color: white;
+  top: 190px;
+  left: 76px;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.date__box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10px;
+}
+
+body {
+  background-color: rgb(61, 61, 68);
+}
+
+.link__box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+}
+
+.link ul {
+  display: grid;
+  /* grid-template-columns: auto auto auto auto; */
+  grid-gap: 10px;
+  list-style-type: none;
+  text-align: center;
+}
+
+.link ul a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+a:hover {
+  color: blue;
+}
+
+span {
+  font-size: 20px;
+  color: white;
+}
+
+.seoul__img {
+  margin-left: 250px;
+}
+
+.mapArea {
+  width: 350px;
+  height: 350px;
+  background: white;
+}
+#locName {
+  width: 50px;
+  height: 30px;
+  background: #fff;
+}

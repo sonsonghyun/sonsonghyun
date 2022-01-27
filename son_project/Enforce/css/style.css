@@ -1,0 +1,237 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  height: 3000px;
+}
+
+header {
+  /* background-image: url("../images/factory.jfif"); */
+  background-color: darkgrey;
+  height: 1000px;
+  background-size: 100%;
+}
+
+h1 {
+  font-size: 35px;
+  margin-top: 10px;
+  margin-left: 20px;
+  color: white;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+}
+
+.menu ul {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 30px;
+  list-style-type: none;
+  margin: 20px 40px 0 0px;
+}
+
+.menu ul a {
+  text-decoration: none;
+  color: white;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.main__box {
+  font-size: 50px;
+  font-weight: 500;
+  text-align: center;
+  color: white;
+  margin-top: 250px;
+}
+
+.sub__box {
+  font-size: 30px;
+  font-weight: 300;
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+}
+
+main {
+  background-color: white;
+  margin-top: 150px;
+}
+
+.second__title {
+  font-size: 30px;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.second__sub {
+  font-size: 70px;
+  text-align: center;
+  font-weight: 800;
+  margin-bottom: 100px;
+}
+
+.second__divide {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+  padding-left: 200px;
+}
+
+.devide1 {
+  margin-bottom: 380px;
+}
+
+.one__title {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.two__title {
+  font-size: 20px;
+  font-weight: 400;
+  opacity: 0.8;
+  margin-bottom: 10px;
+}
+
+.three__title {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.third__title {
+  margin-top: 100px;
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.third__sub {
+  margin-top: 30px;
+  font-size: 70px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 200px;
+}
+
+.split {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+  justify-content: space-between;
+  margin-left: 200px;
+  margin-bottom: 360px;
+}
+
+.split__title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.split__sub {
+  font-size: 40px;
+  font-weight: 600;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.fourth__sub {
+  margin-top: 30px;
+  font-size: 70px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.share1 {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  margin-left: 400px;
+  margin-bottom: 50px;
+  height: 100px;
+}
+
+.share2 {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  margin-left: 400px;
+  margin-bottom: 50px;
+  height: 100px;
+}
+
+.share3 {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  margin-left: 400px;
+  margin-bottom: 50px;
+  height: 100px;
+}
+
+.share__logo {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-left: 1px solid;
+  border-right: 1px solid;
+  /* 나중에 사진 넣고나서는 border-right 지워야함 */
+  width: 150px;
+  color: white;
+  background-color: black;
+  filter: opacity(0.2);
+}
+
+.share__text {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-right: 1px solid;
+  margin-right: 500px;
+  width: 1000px;
+  text-align: center;
+  color: white;
+  background-color: black;
+  filter: opacity(0.2);
+}
+
+.fifth__text ul {
+  width: 800px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin-left: 800px;
+  margin-bottom: 100px;
+  margin-top: 150px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.fifth__text a {
+  text-decoration: none;
+  color: black;
+}
+
+.fifth__text li {
+  list-style: none;
+}
+
+.last {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-bottom: 100px;
+  margin-left: 100px;
+}
+
+.fuck {
+  font-size: 18px;
+  font-weight: 500;
+}

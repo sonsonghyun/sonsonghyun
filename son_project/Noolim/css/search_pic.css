@@ -1,0 +1,61 @@
+@font-face {
+  font-family: abster;
+  src: url(font/abster-webfont.woff) format("woff");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 100px;
+}
+
+h1 a {
+  text-decoration: none;
+  color: black;
+}
+
+.main__title {
+  font-size: 40px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.sub__title {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.pic {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.map__api {
+  font-size: 30px;
+  text-align: center;
+}
+
+.data1 {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 50px;
+  width: 1000px;
+  height: 200px;
+  margin-left: 450px;
+  background-color: bisque;
+}
+
+.data1 ul {
+  list-style-type: none;
+}
+
+.seoul__img {
+  margin-left: 600px;
+  margin-bottom: 50px;
+}

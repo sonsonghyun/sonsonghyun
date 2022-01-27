@@ -1,0 +1,159 @@
+@font-face {
+  font-family: abster;
+  src: url(font/abster-webfont.woff) format("woff");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: darkgray;
+}
+
+section {
+  background-color: rgb(rgb(202, 191, 191), green, blue);
+}
+
+.join {
+  margin-top: 200px;
+  height: 700px;
+  padding-left: 680px;
+  padding-right: 600px;
+}
+
+.logo {
+  font-size: 40px;
+  font-weight: 600;
+  margin-left: 200px;
+  margin-bottom: 50px;
+}
+
+.logo a {
+  text-decoration: none;
+  color: black;
+}
+
+.input1 {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 800;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.input2 {
+  font-size: 17px;
+  font-weight: 300;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.login-form {
+  position: relative;
+  z-index: 2;
+}
+.login-form h1 {
+  font-size: 32px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.int-area {
+  width: 530px;
+  position: relative;
+  margin-top: 20px;
+}
+.int-area:first-child {
+  margin-top: 0;
+}
+.int-area input {
+  width: 100%;
+  padding: 20px 10px 10px;
+  background: transparent;
+  border-bottom: 1px solid #999;
+  font-size: 18px;
+  color: #fff;
+  outline: none;
+}
+
+.int-area label {
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  font-size: 18px;
+  color: black;
+  transition: all 0.5s ease;
+}
+.int-area label.warning {
+  color: red !important;
+  animation: warning 0.3s ease;
+  animation-iteration-count: 3;
+}
+@keyframes warning {
+  0% {
+    transform: translateX(-8px);
+  }
+  25% {
+    transform: translateX(8px);
+  }
+  50% {
+    transform: translateX(-8px);
+  }
+  75% {
+    transform: translateX(8px);
+  }
+}
+.int-area input:focus + label,
+.int-area input:valid + label {
+  top: 0;
+  font-size: 13px;
+  color: rgb(rgb(206, 197, 197), green, blue);
+}
+
+.cancel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10px;
+  margin-top: 20px;
+  justify-content: space-between;
+  width: 400px;
+  margin-left: 70px;
+}
+
+.cancel1 {
+  font-size: 22px;
+  font-weight: 700;
+  border: solid 1px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.cancel2 {
+  font-size: 22px;
+  font-weight: 700;
+  border: solid 1px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.cancel a {
+  text-decoration: none;
+  color: black;
+}
+
+.already {
+  margin-top: 20px;
+}
+
+.already a {
+  color: blue;
+}
+
+.already1 {
+  font-size: 15px;
+  margin-left: 175px;
+}
