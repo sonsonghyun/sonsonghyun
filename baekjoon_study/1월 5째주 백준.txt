@@ -61,7 +61,26 @@ for i in "CAMBRIDGE":
     mail = mail.replace(i,"")
 print(mail) 
 
+9086번 >> 문자열 입력받고 입력받은 문자의 첫글자와 마지막 글자 출력
+첫글자는 문자열[0]
+마지막 글자는 문자열[-1]을 사용하면 됨
+글자를 공백없이 출력하려면 sep= 를 사용하면 됨
+code)
+n=int(input())
 
+for i in range(n):
+    list=input()
+    print(list[0],list[-1],sep='')
+
+5988번 >> 입력숫자에 따라서 짝,홀수 구분
+code)
+n=int(input())
+for i in range(n):
+    a=int(input())
+    if a%2==1:
+        print("odd")
+    else :
+        print("even")
 
 
 
