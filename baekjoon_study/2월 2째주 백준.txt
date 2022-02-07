@@ -1,0 +1,77 @@
+1546번 평균 구하기
+code)
+n = int(input())  
+test_list = list(map(int, input().split()))
+max_score = max(test_list)
+
+new_list = []
+for i in range(n):
+    new_list.append((test_list[i]/max_score)*100)
+print(sum(new_list)/n)
+
+2839번 설탕 나누기
+나는 5를 나누고 그 나머지에 대해서 3으로 나누려고 했는데
+이게 생각해보니 두개를 적절히 섞어서 나오는 경우에 대해서 
+계산이 안됨 5로 나누어 지는거는 나누고 그렇지 않은 것은
+3씩 빼가면서 계산해야 함
+code)
+num=int(input())
+count=0
+
+while num>=0:
+    if num%5==0:
+        count+=int(num//5)
+        print(count)
+        break
+    num -=3
+    count +=1
+else:
+    print(-1)
+
+4344번 평균은 넘겠지
+'%.?f'로 소수점 관리하기
+ print('%.nf' %number) 로 number의 소수점 n+1번째 자릿수에서
+ 반올림해서 소수점 n번째 자릿수까지 출력함으로써 소수점을 관리할 수 있다.
+
+code)
+n=int(input())
+for i in range(n):
+    input_score = list(map(int,input().split()))
+    
+    avg = sum(input_score[1:])/input_score[0]
+    count=0
+    for score in input_score[1:]:
+        if score > avg:
+            count +=1
+    rate = count / input_score[0]*100
+    print('%.3f' %rate + '%')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
