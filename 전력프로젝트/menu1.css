@@ -1,0 +1,83 @@
+body {
+  margin: 0px;
+  height: 1000px;
+  background-color: lightslategray;
+}
+
+section {
+  height: 1000px;
+  margin-top: 100px;
+}
+
+/*여기부터 nav  */
+nav {
+  margin-top: 25px;
+}
+
+nav:first-child {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+nav:nth-child(2) {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+nav div a {
+  text-decoration: none;
+  color: black;
+  margin: 1em;
+  font-size: 1.5em;
+}
+
+h2 a {
+  text-decoration: none;
+  color: black;
+  padding-right: 500px;
+  font-size: 1.5em;
+}
+
+#horizontal-underline {
+  position: absolute;
+  left: 0;
+  height: 4px;
+  width: 0;
+  border-radius: 3px;
+  transition: 0.5s;
+  background-color: darkblue;
+  top: 0;
+}
+
+/* 여기부터 section */
+.text {
+  text-align: center;
+}
+
+.explain_1 {
+  width: 1500px;
+  height: 200px;
+  border: 2px solid;
+  display: inline-block;
+  font-size: 20px;
+}
+
+.explain_2 {
+  width: 1500px;
+  height: 200px;
+  border: 2px solid;
+  display: inline-block;
+  font-size: 20px;
+}
+
+.imgage {
+  display: flex;
+}
+
+.img1 {
+  flex: 1;
+}
+
+.img2 {
+  flex: 1;
+}
