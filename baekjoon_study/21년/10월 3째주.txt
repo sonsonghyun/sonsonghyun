@@ -1,0 +1,64 @@
+10162번 > 간단한 수학 문제
+나머지와 몫에 대한 개념만 있으면 됨
+% 나머지 / 나누기 //나누기 후 소수점 버림
+t = int(input())
+if t % 10 != 0:
+    print(-1)
+else:
+    a = 0
+    b = 0
+    c = 0
+    a = t // 300
+    b = (t % 300) // 60
+    c = (t % 300) % 60 // 10
+    print(a, b, c)
+-----------------------------------
+2480번 > if문으로 분류 / sort로 정렬
+이거 *** if (a[0]==a[1]) and (a[0]==a[2]) 
+에서 괄호 연산해야함 안그러면 and 연산이
+우선으로 적용 
+a=list(map(int,input().split()))
+
+if (a[0]==a[1]) and (a[0]==a[2]) :
+    print(10000+a[0]*1000)
+elif (a[0]==a[1]) and (a[0]!=a[2]):
+    print(1000+a[0]*100)
+elif (a[0]==a[2]) and (a[0]!=a[1]):
+    print(1000+a[0]*100)
+elif (a[1]==a[2]) and (a[1]!=a[0]):
+    print(1000+a[1]*100)
+else :
+    a.sort(reverse=True)
+    print(a[0]*100)
+-----------------------------------
+2420번 
+>> 절댓값 함수는 abs() 사용하면 됨
+a, b = map(int, input().split())
+print(abs(a - b))
+
+5532번
+>> 올림 함수 import math 라이브러리에서
+math.ceil.(변수) 사용하면 나누고 정수 
+나머지가 아니면 올려줌 
+
+10101번 >> 삼각형 합 구하기
+>>난 input 3개 받아서 각각 if elif else 사용함
+angle = [int(input()) for _ in range(3)]
+
+if sum(angle) == 180:
+    if angle[0] == angle[1] == angle[2]:
+        print('Equilateral')
+    elif angle[0] == angle[1] or angle[1] == angle[2] or angle[2] == angle[0]:
+        print('Isosceles')
+    else:
+        print('Scalene')
+else:
+    print("Error")
+
+11943번 >> a,b바구니에 있는 과일 
+최소한으로 옮기는 법
+>> list,조건문으로 ㅈㄹ하지말고 min함수쓰면
+굉~장히 빠름 
+a, b = map(int, input().split())
+c, d = map(int, input().split())
+print(min(a+d, b+c))

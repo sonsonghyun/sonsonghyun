@@ -47,7 +47,18 @@ for i in range(n):
     print('%.3f' %rate + '%')
 
 
-
+2750번 
+문제 이해를 잘못해서 몇번 틀림
+출력을 하나씩 해야해서 입력받고 정렬시킨 후 
+하나씩 반복문 돌려서 출력함
+code)
+n=int(input())
+input_list=[]
+for i in range(n):
+    input_list.append(int(input()))
+input_list.sort()
+for i in input_list:
+    print(i)
 
 
 

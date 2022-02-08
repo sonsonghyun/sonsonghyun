@@ -1,0 +1,13 @@
+a=list(map(int,input()))
+>> list로 입력 받는거
+
+2739번 >> 구구단
+1. range(a,b)
+a=시작값 b=종료값
+a에서 시작하지만 b는 포함하지 않음
+2.  print에서 문자열과 섞어서 쓸 때
+(변수a "문자열x" 변수b "문자열y" )
+이런식으로 사용
+n=int(input())
+for i in range(1,10):
+    print(n, '*', i, '=', n*i)

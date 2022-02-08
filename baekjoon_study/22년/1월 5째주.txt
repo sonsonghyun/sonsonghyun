@@ -1,0 +1,45 @@
+5597번 
+code1)
+students = list(range(1, 31))
+report = sorted(int(input()) 
+for i in range(28))
+result = set(students) - set(report)
+print('\n'.join(map(str, sorted(result))))
+
+report 랑 result 를 처음 봤으
+1.입력 값 뒤에 반복문을 사용 가능
+2.set > 집합 형태 딕셔너리와 비슷하지만
+키는 없고 값만 존재
+3. - '구분자'.join(리스트)
+리스트의 값과 값 사이에 '구분자'를 넣어 하나의 문자열로 합쳐서 반환해준다.
+
+'+'.join(['a', 'b', 'c']) 일 경우 "a+b+c" 의 문자열 형태로 반환해준다.
+
+
+code2)
+students = [i for i in range(1,31)]
+
+for _ in range(28):
+    applied = int(input())
+    students.remove(applied) #소거
+
+print(min(students))
+print(max(students))
+
+students > 1~30까지의 값을 리스트 저장
+반복문으로 applied를 input으로 받은 후에
+리스트에서 이를 제거 해주고 
+문제에 맞게 최대,최소를 두개이므로
+max,min으로 해서 출력
+여러개면 .sort 쓰는게 더 좋을 듯
+
+10995번 >> 별찍기
+n = int(input()) 
+if n==1:
+    print('*')
+else:
+    for i in range(n):
+        if i%2==1:
+            print(' *'*n)
+        else:
+            print('* '*n)

@@ -1,0 +1,46 @@
+10870번 >> 피보나치 수열
+0과1을 이미 넣어놓고 
+리스트의 시작번호가 0이 아님
+code)
+n=int(input())
+list=[0,1]
+for i in range(2,n+1):
+    num = list[i-1]+list[i-2]
+    list.append(num)
+print(list[n])
+
+11721번 >> 반복문 범위 제한 가능한지
+인덱싱 하는방법 아는지 문제
+반복문(시작,끝,몇개씩증가)
+인덱싱> 변수[시작:끝]
+반복문에서 i=0부터 이기에 i+10
+code)
+n=input()
+for i in range(0,len(n),10):
+    print(n[i:i+10])
+
+10953 >> split 함수
+문자열.split()
+문자열.split('구분자')
+split 함수는 문자열을 maxsplit 횟수만큼
+sep의 구분자를 기준으로 문자열을 구분하여
+리스트로 만들어준다
+code)
+n=int(input())
+for i in range(n):
+    a,b=map(int,input().split(','))
+    print(a+b)
+
+7567번 >>앞의 인덱스랑  지금 인덱스랑
+다른 지 여부를 확인하는 것
+code)
+dish=list(input())
+sum=0
+for i in range(len(dish)):
+    if i==0:
+        sum+=10
+    elif dish[i-1]==dish[i]:
+        sum+=5
+    else:
+        sum+=10
+print(sum)

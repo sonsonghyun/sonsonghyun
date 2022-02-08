@@ -1,0 +1,30 @@
+17388번 와글와글 숭고한
+>> list에서도 min 함수 사용가능 
+a=list(map(int,input().split()))
+if a[0]+a[1]+a[2] >= 100 :
+    print("OK")
+else :
+    if (min(a))==a[0]:
+        print("Soongsil")
+    elif (min(a))==a[1]:
+        print("Korea")
+    elif (min(a))==a[2]:
+        print("Hanyang")
+
+map은 리스트의 요소를 지정된 함수로 처리해주는 함수입니다
+-----------------------------------
+13866
+>> 1,2,3,4 순서의 값을 임의의 두팀을 
+짜는데 그 차이를 최소로 하려면
+(최대+최소) 에서 가운데 둘을 빼면 된다
+a,b,c,d=map(int,input().split())
+print(abs(((a+d)-(b+c))))
+-----------------------------------
+15726번 이칙연산
+a=list(map(int,input().split()))
+a.sort()
+print(a)
+print((a[2]*a[1])//a[0])
+>> 왜 틀린지 모르겟음 
+>> 병신같은 문제임 곱하기 나누기 어디 
+넣을지를 정하는 

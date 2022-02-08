@@ -1,0 +1,90 @@
+2739번 >> 구구단-C에서 한거
+1. range(a,b)
+a=시작값 b=종료값
+a에서 시작하지만 b는 포함하지 않음
+2.  print에서 문자열과 섞어서 쓸 때
+(변수a "문자열x" 변수b "문자열y" )
+이런식으로 사용
+n=int(input())
+for i in range(1,10):
+    print(n, '*', i, '=', n*i)
+
+2438번 >> 별찍기 -C에서 한거
+1. range(a,b+1)
+a=시작값 b+1=종료값
+a에서 시작하지만 b는 포함하지 않으므로
+b+1
+code)
+n=int(input())
+for i in range(1,n+1):
+    print("*"*i)
+    
+10871번 >> X보다 작은 수
+1.end옵션을 사용하면 그 뒤의 출력값과 이어서 출력한다. (즉, 줄바꿈을 하지 않게 된다.)
+ex)
+print("I like", end=" ")
+print("money")
+출력 >>>>> I like money
+2. A수열을 띄어쓰기 해서 사용할 때
+A = list(map(int, input().split()))
+>> list 사용
+N, X = map(int, input().split())
+A = list(map(int, input().split()))
+for i in A:
+    if i < X:
+        print(i, end=" ")
+
+
+10952번 >> A+B
+1. while True :  무한루프
+
+while True:
+    a,b = map(int, input().split())
+    if a==0 and b==0 :
+        break;
+    else:
+        print(a+b)
+
+11021번 >> A+B
+1. 놓친게 출력할 때 i만 데이터 형태를 
+빠꿔서 넣어주면 되는걸 싹 다 정리할라한거
+
+T=int(input())
+for i in range(1,T+1):
+    a,b=map(int,input().split())
+    print("Case #"+str(i)+":",a+b)
+
+10818 >> 최대,최소
+내 code)
+T=int(input())
+a=list(map(int, input().split()))
+a.sort()
+print(a[0],a[4])
+>> 일단 예시에 5개라고 써놔서 저렇게 했는데 이렇게 되면 마지막 프린트 부분에 
+입력이 5개가 아닐경우 최대가 출력이 안됨
+그래서 min(),max() 를 사용해야 함
+
+정답 code)
+T=int(input())
+a=list(map(int, input().split()))
+print(min(a),max(a))
+
+10951 >> A+B 무한루프
+>> 무한루프 빠져나오는 조건 설정 안해줌
+>> 10952번과 다른 건 10952번은 조건문에
+의해서 (0,0)이 입력되면 루프를 종료하지만
+여기 무한루프는 종료하는 방법이 설정이
+안되어 있어서
+try-except 구문을 사용한다.
+try에는 에러가 발생할 여지가 있는 문장
+a,b=map(int,input().split())
+>> 문자열이나 실수를 입력 시 에러 발생
+except 에는 에러가 발생한 경우인데
+여기서는 break 로 빠져나오게 했다.
+정답 code)
+while True:
+    try:
+        a,b=map(int,input().split())
+    except:
+        break
+    print(a+b)

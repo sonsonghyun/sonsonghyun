@@ -1,0 +1,86 @@
+백준 알고리즘 함수-1주일 간격으로 업뎃
+<틀리거나 모르는 문제>
+이번주 부터 브론즈3
+
+10872번 > 팩토리얼 def 함수 안씀
+code)
+n=int(input())
+
+result=1
+if n>0:
+    for i in range(1,n+1):
+        result*=i
+print(result)
+
+11718 > 그대로 출력하기
+EOFError
+
+: 입력이 끝남(End Of File) 에러
+ 
+데이터가 없어 더 이상 을 읽을수 
+code)없을 때 발생하는 에러값
+while True:
+    try:
+        print(input())
+    except EOFError:
+        break
+
+2747번 >> 이해안감 복습해야함
+code)
+n= int(input())
+array= [0,1]
+for i in range(2,n+1):
+    array.append(array[-1]+array[-2])
+    
+print(array[n])
+
+4153번
+>> if 두개 썼어야함 
+000이 else와 겹치기 때문에
+code)
+while(True):
+    a,b,c=map(int,input().split())
+    if a==0 and b==0 and c==0:
+        break;
+    line =[a,b,c]
+    line.sort()
+    if line[0]**2+line[1]**2==line[2]**2:
+        print("right")
+    else:
+        print("wrong")
+
+2490번 >> 윷놀이
+1. 모르던 함수 a.count(찾는 문자)
+>> 찾는문자의 개수 파악
+2. 생각 못한거 >> 윷놀이 잘 모름 
+code)
+for i in range(3):
+    a=list(map(int,input().split()))
+    b=a.count(1)
+    if b==0:
+        print("D")
+    elif b==1:
+        print("C")
+    elif b==2:
+        print("B")
+    elif b==3:
+        print("A")
+    elif b==4:
+        print("E")
+
+2455 >> 지능형 기차
+1.모르던거 리스트에 항목추가
+>> list 이름이 a 이면 a.append(항목)
+2. 생각 못한 거 
+더한거 빼는거를 한 문자에 넣어서 하지말고
+그냥 복합연산자 사용해서 리스트에 때려박고
+나중에 max사용하면 됨
+code)
+t=[]
+people=0
+for i in range(4):
+    a,b=map(int,input().split())
+    people += b
+    people -= a
+    t.append(people)
+print(max(t))

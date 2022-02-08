@@ -1,0 +1,57 @@
+백준 오답노트)
+
+5086번
+>> 무한 루프이므로 while(1) 이 필요
+break 조건이 input이 (0,0)
+if 안에서 and 조건으로 묶어야 했고
+neither는 앞에 두 조건 말고는 else임
+code)
+while (1):
+    x,y = map(int,input().split())
+    
+    if x==0 and y==0:
+        break
+        
+    if x<y and y%x==0:
+        print("factor")
+    elif x>y and x%y==0:
+        print("multiple")
+    else:
+        print("neither")
+
+2576번
+>> ** list에 값이 있냐 없냐를 
+if list: 이런식으로 표현 가능한가봄**
+기본적인 것 
+list에 값 추가하는 것 list.append(a)
+code)
+list=[]
+
+for _ in range(7):
+    a=int(input())
+    if a%2 !=0:
+        list.append(a)
+if list:
+    print(sum(list))
+    print(min(list))
+else: 
+    print(-1)
+
+10991번 > 별 찍기
+code)
+n=int(input())
+for i in range(n):
+    print(" "*(n-i-1)+("* "*(i+1))) 
+>>print 뒤에 부분이 이해가 안갔는데
+"* "* (횟수)니깐 여러 번 찍히는게 맞음
+
+2953번
+index >> 리스트 중에서 특정한 원소가
+몇 번째에 처음으로 등장해는 지 알려줌
+처음써봤음 >> 최근 푼 것중 젤 오래걸림
+code)
+list=[]
+
+for i in range(5):
+    list.append(sum(map(int,input().split())))
+print(list.index(max(list))+1,max(list))
