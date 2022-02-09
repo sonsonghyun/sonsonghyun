@@ -60,9 +60,48 @@ input_list.sort()
 for i in input_list:
     print(i)
 
+2869번
+이건 방식이 잘못됨 하루종일 반복문 돌렸는데 자꾸 
+런타임 에러떴음 그래서 다른사람들 풀이 보니깐
+import math 사용해서 품 > 수학문제
 
+code)
+import math
 
+a, b, v = map(int, input().split()) 
 
+day = math.ceil((v-a)/(a-b)) + 1
+print(day)
+
+11719 그대로 출력
+전에 해본 것
+code)
+while True:
+    try:
+        print(input())
+    except EOFError:
+        break
+
+2748 피보나치 수열2
+전에 해본 것
+code)
+n=int(input())
+list=[0,1]
+for i in range(2,n+1):
+    num = list[i-1]+list[i-2]
+    list.append(num)
+print(list[n])
+
+11050 이항계수
+import math 한 다음에
+math.factorial(n) 사용하면 ! 계산가능
+code)
+import math
+n,k = map(int,input().split())
+a=math.factorial(n)
+b=math.factorial(k)
+c=math.factorial(n-k)
+print(int(a/(b*c)))
 
 
 
