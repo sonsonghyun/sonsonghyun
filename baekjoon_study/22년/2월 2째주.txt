@@ -103,7 +103,26 @@ b=math.factorial(k)
 c=math.factorial(n-k)
 print(int(a/(b*c)))
 
+1259 팰린드롬수
+문자열 역출력 할 수 있는지 묻는 문제
+code)
+while True:
+    n=input()
+    if n== '0':
+        break
+    elif n==n[::-1]:
+        print('yes')
+    else:
+        print('no')
 
+10988 팰린드롬인지 확인하기
+문자열 역출력 할 수 있는지 묻는 문제
+code)
+n=input()
+if n==n[::-1]:
+    print(1)
+else:
+    print(0)
 
 
 
