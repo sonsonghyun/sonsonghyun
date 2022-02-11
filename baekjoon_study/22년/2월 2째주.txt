@@ -124,8 +124,35 @@ if n==n[::-1]:
 else:
     print(0)
 
+9093 단어 뒤집기
+code)
+n=int(input())
+#반복문 시작 sentence에 입력을 받고
+words에 공백을 이용해서 구분
+아래 반복문을 돌리고 넣을 list를 reverse_words로 선언
+아래 반복문에서는 words를 반복문 돌리는데 
+[::-1]로 역순으로 해서 빈 리스트에 추가
+for i in range(n):  
+    sentence = input()
+    words=sentence.split(' ')
+    reverse_words = []
+    
+    for word in words:
+        reverse_word = word[::-1]
+        reverse_words.append(reverse_word)
+    print(' '.join(reverse_words))
 
-
+1357 뒤집힌 덧셈
+code)
+# Rev함수 정의
+def Rev(x):
+    x=int(x[::-1])
+    return x
+#입력값 받기
+x,y = input().split()
+#여기서 str 안해주면 int는 
+result = Rev(str(Rev(x)+Rev(y)))
+print(result)
 
 
 
