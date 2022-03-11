@@ -1,0 +1,30 @@
+body{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    font-size: 16px;
+}
+
+.title{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.table{
+    margin-bottom: 40px;
+}
+.list-group{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.button__cover{
+    text-align: center;
+    margin-top: 30px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}

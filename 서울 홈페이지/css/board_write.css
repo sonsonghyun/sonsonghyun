@@ -1,0 +1,39 @@
+body{
+    background-color: grey;
+}
+
+section{
+    
+    margin-left: 360px;
+    width: 1200px;
+    
+}
+
+.title{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding-top: 50px;
+    border: 1px solid;
+    font-size: 25px;
+    background-color: white;
+}
+
+.contents{
+    text-align: center;
+    margin-top: 50px;
+    height: 400px;
+    border: 1px solid;
+    font-size: 25px;
+    background-color: white;
+}
+
+.finish{
+    margin-top: 50px;
+    text-align: center;
+    border: 1px solid;
+    width: 100px;
+    height: 35px;
+    font-size: 20px;
+    background-color: white;
+}
